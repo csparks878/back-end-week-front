@@ -21,7 +21,7 @@ class App extends Component {
   }
 
   componentWillMount = () => {
-    axios.get("https://thawing-fjord-61565.herokuapp.com/")
+    axios.get("https://thawing-fjord-61565.herokuapp.com/allnotes")
       .then(response => {
         this.setState({allNotes: response.data});
         console.log(`The state in App.js was added successfully`)
