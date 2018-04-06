@@ -21,7 +21,7 @@ class Login extends Component {
     }
 
     handleSubmit = () => {
-        axios.post("http://localhost:3001/api/login", {
+        axios.post("https://thawing-fjord-61565.herokuapp.com/api/login", {
             username: this.state.username,
             password: this.state.password
         })

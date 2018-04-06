@@ -8,7 +8,7 @@ class ViewNote extends Component {
     }
 
     handleDelete = (event) => {
-        axios.delete("https://git.heroku.com/thawing-fjord-61565.git", {data: {id: this.props.location.state.id}})
+        axios.delete("https://thawing-fjord-61565.herokuapp.com/api/deleteNote", {data: {id: this.props.location.state.id}})
             .then(response => console.log(`The note was successfully removed`))
             .catch(err => console.log(`There was an error with the axios delete request: \n ${err}`))
     }

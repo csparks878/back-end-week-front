@@ -25,7 +25,7 @@ class Menu extends Component {
             <p className="menu__buttons__text">Login</p>
           </div></a>
 
-          <a href="https://sparksnotes.netlify.com/register" className="menu__buttons__links"><div className="menu__buttons--align">
+          <a href="/register" className="menu__buttons__links"><div className="menu__buttons--align">
             <p className="menu__buttons__text">Register</p>
           </div></a>
         </div>

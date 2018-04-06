@@ -21,7 +21,7 @@ class Register extends Component {
     }
 
     handleSubmit = () => {
-        axios.post("http://localhost:3001/api/newUser", {
+        axios.post("https://thawing-fjord-61565.herokuapp.com/api/newUser", {
             username: this.state.username,
             password: this.state.password
         })

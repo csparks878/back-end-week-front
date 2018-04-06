@@ -30,7 +30,7 @@ class EditNote extends Component {
     }
 //{data: {title: this.state.title, content: this.state.content, id: this.props.location.state.id}}
     updateNote = () => {
-        axios.put("http://localhost:3001/api/editNote", {id: this.state.id, title: this.state.title, content: this.state.content})
+        axios.put("https://thawing-fjord-61565.herokuapp.com/api/editNote", {id: this.state.id, title: this.state.title, content: this.state.content})
             .then(response => {
                 console.log(`The note was updated!`)
             })
