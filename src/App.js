@@ -21,7 +21,7 @@ class App extends Component {
   }
 
   componentWillMount = () => {
-    axios.get("http://localhost:3001/api/allNotes")
+    axios.get("https://thawing-fjord-61565.herokuapp.com/get")
       .then(response => {
         this.setState({allNotes: response.data});
         console.log(`The state in App.js was added successfully`)
@@ -46,7 +46,7 @@ class App extends Component {
           <Route path="/viewnote" exact component={ViewNote} />
           <Route path="/editnote" exact component={EditNote} />
           <Route path="/login" exact component={Login} />
-          <Route path="https://sparksnotes.netlify.com/register" exact component={Register} />
+          <Route path="https://thawing-fjord-61565.herokuapp.com/register" exact component={Register} />
         </div>
       </div>
     );
