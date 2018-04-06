@@ -46,7 +46,7 @@ class App extends Component {
           <Route path="/viewnote" exact component={ViewNote} />
           <Route path="/editnote" exact component={EditNote} />
           <Route path="/login" exact component={Login} />
-          <Route path="/register" exact component={Register} />
+          <Route path="https://sparksnotes.netlify.com/register" exact component={Register} />
         </div>
       </div>
     );
