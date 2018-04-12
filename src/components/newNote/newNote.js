@@ -32,7 +32,7 @@ class NewNote extends Component {
                 console.log(`There was an error in newNote.js posing a new note document: \n ${err}`);
             })
     }
-//asdf
+
     render(){
         return(
             <div className="newNote">
