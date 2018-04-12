@@ -21,7 +21,7 @@ class NewNote extends Component {
     }
 
     handleSubmit = () => {
-        axios.post("https://thawing-fjord-61565.herokuapp.com/api/newNote", {
+        axios.post("https://thawing-fjord-61565.herokuapp.com/api/newnote", {
             title: this.state.title,
             content: this.state.content
         })
